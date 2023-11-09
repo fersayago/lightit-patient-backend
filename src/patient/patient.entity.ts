@@ -15,7 +15,7 @@ export class Patient {
   email: string;
 
   @Column()
-  @IsPhoneNumber('any', { message: 'Invalid phone number' })
+  @IsPhoneNumber(undefined, { message: 'Must be a valid phone number' })
   phoneNumber: string;
 
   @Column()
